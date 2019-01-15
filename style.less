@@ -4,12 +4,19 @@
     margin:0;
     padding: 0;
 }
+html{
+    height: 100%;
+
 body {
     background-color: #FFF0F5;
     font-family: 'Philosopher', sans-serif;
     color: #333;
     font-weight: 500;
     min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
     
     h2{
         margin-left: 10%;
@@ -22,6 +29,7 @@ body {
         background-image: url(head.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        flex: 0 0 auto;
         /*Логотип*/
         .logo {
             margin-left: 15%;
@@ -55,8 +63,9 @@ body {
     }
     /*Содержимое*/
     .container {
+        flex: 1 0 auto;
         width: 80%;
-        margin: 0 auto;
+        margin: auto auto;
         padding: 2% 2%;
         display: flex;
         justify-content: space-around;
@@ -195,7 +204,8 @@ body {
         border-top: 2px solid #939;
         background-color: lightgrey;
         height: 100px;
-        p{
+        flex: 0 0 auto;
+            p{
             float: right;
             margin-top: 10px;
             margin-right: 20px;
@@ -206,4 +216,5 @@ body {
     .left{
         display: block;
     }
+}
 }

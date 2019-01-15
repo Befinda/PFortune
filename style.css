@@ -3,42 +3,49 @@
   margin: 0;
   padding: 0;
 }
-body {
+html {
+  height: 100%;
+}
+html body {
   background-color: #FFF0F5;
   font-family: 'Philosopher', sans-serif;
   color: #333;
   font-weight: 500;
   min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   /*Заголовок*/
   /*Содержимое*/
   /*Подвал*/
   /*Left*/
 }
-body h2 {
+html body h2 {
   margin-left: 10%;
   color: #929;
 }
-body .header {
+html body .header {
   border-bottom: 2px solid #939;
   height: 200px;
   background-image: url(head.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  flex: 0 0 auto;
   /*Логотип*/
   /*Меню*/
 }
-body .header .logo {
+html body .header .logo {
   margin-left: 15%;
   display: inline;
 }
-body .header .logo img {
+html body .header .logo img {
   width: 350px;
 }
-body .header .menu {
+html body .header .menu {
   float: right;
   margin-top: 150px;
 }
-body .header .menu li {
+html body .header .menu li {
   font-style: italic;
   font-size: 24px;
   font-weight: 600;
@@ -46,17 +53,18 @@ body .header .menu li {
   padding: 2px 5px;
   float: left;
 }
-body .header .menu li a {
+html body .header .menu li a {
   color: #929;
   text-decoration: none;
 }
-body .header .menu li a:hover {
+html body .header .menu li a:hover {
   color: #606;
   font-weight: 700;
 }
-body .container {
+html body .container {
+  flex: 1 0 auto;
   width: 80%;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 2% 2%;
   display: flex;
   justify-content: space-around;
@@ -66,7 +74,7 @@ body .container {
   /*Форма обратной связи*/
   /*Страница описания товара*/
 }
-body .container .page {
+html body .container .page {
   width: 120px;
   outline-width: 1px;
   outline-color: #606;
@@ -76,132 +84,133 @@ body .container .page {
   padding: 5px;
   margin-bottom: 10px;
 }
-body .container .page img {
+html body .container .page img {
   width: 120px;
 }
-body .container .page:hover {
+html body .container .page:hover {
   outline-width: 3px;
   text-shadow: 1px 1px 2px;
 }
-body .container .page a:link {
+html body .container .page a:link {
   color: inherit;
 }
-body .container form fieldset input {
+html body .container form fieldset input {
   width: 200px;
   font-family: inherit;
   outline: none;
   margin: 3px;
 }
-body .container form fieldset input[type="text"] {
+html body .container form fieldset input[type="text"] {
   font-size: 16px;
   height: 20px;
 }
-body .container form fieldset input[type="submit"],
-body .container form fieldset input[type="reset"] {
+html body .container form fieldset input[type="submit"],
+html body .container form fieldset input[type="reset"] {
   height: 25px;
 }
-body .container form fieldset .email:focus {
+html body .container form fieldset .email:focus {
   color: #00C;
   background-color: #FF9;
 }
-body .container form fieldset .fio {
+html body .container form fieldset .fio {
   text-transform: capitalize;
 }
-body .container form fieldset textarea {
+html body .container form fieldset textarea {
   height: 200px;
   font-family: inherit;
   font-size: 16px;
 }
-body .container .short {
+html body .container .short {
   display: flex;
 }
-body .container .short .image {
+html body .container .short .image {
   outline-width: 2px;
   outline-color: #606;
   outline-style: solid;
   margin: 20px 10px;
 }
-body .container .short .image:hover {
+html body .container .short .image:hover {
   outline: none;
 }
-body .container .short .m_des {
+html body .container .short .m_des {
   color: #707070;
   font-size: 14px;
   font-style: italic;
   line-height: 16px;
 }
-body .container .des {
+html body .container .des {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   background-color: #eaeaea;
 }
-body .container .max_des {
+html body .container .max_des {
   color: #484343;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
-body .container .max_des p:first-letter {
+html body .container .max_des p:first-letter {
   color: #606;
   font-family: serif;
   font-size: 20px;
 }
-body .container .param {
+html body .container .param {
   list-style-image: url(page/mark.png);
   color: #939;
   font-size: 18px;
 }
-body .container table,
-body .container tr,
-body .container td {
+html body .container table,
+html body .container tr,
+html body .container td {
   border-collapse: collapse;
   padding: 15px;
   text-align: center;
 }
-body .container table .t_cap,
-body .container tr .t_cap,
-body .container td .t_cap {
+html body .container table .t_cap,
+html body .container tr .t_cap,
+html body .container td .t_cap {
   font-weight: 700;
   font-size: 20px;
 }
-body .container table input,
-body .container tr input,
-body .container td input {
+html body .container table input,
+html body .container tr input,
+html body .container td input {
   width: 100px;
 }
-body .container table .row,
-body .container tr .row,
-body .container td .row {
+html body .container table .row,
+html body .container tr .row,
+html body .container td .row {
   border: 1px solid #939;
 }
-body .container table .buy:hover,
-body .container tr .buy:hover,
-body .container td .buy:hover {
+html body .container table .buy:hover,
+html body .container tr .buy:hover,
+html body .container td .buy:hover {
   cursor: pointer;
 }
-body .container table .buy:active,
-body .container tr .buy:active,
-body .container td .buy:active {
+html body .container table .buy:active,
+html body .container tr .buy:active,
+html body .container td .buy:active {
   outline: 2px solid #606;
 }
-body .container table tr:first-of-type {
+html body .container table tr:first-of-type {
   font-size: 1.2em;
   font-weight: 600;
   height: 70px;
   background-color: #C9C;
 }
-body .footer {
+html body .footer {
   border-top: 2px solid #939;
   background-color: lightgrey;
   height: 100px;
+  flex: 0 0 auto;
 }
-body .footer p {
+html body .footer p {
   float: right;
   margin-top: 10px;
   margin-right: 20px;
 }
-body .left {
+html body .left {
   display: block;
 }
