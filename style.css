@@ -21,6 +21,8 @@ body .header {
   background-image: url(head.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /*Логотип*/
+  /*Меню*/
 }
 body .header .logo {
   margin-left: 15%;
@@ -33,6 +35,22 @@ body .header .menu {
   float: right;
   margin-top: 150px;
 }
+body .header .menu li {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 2px 5px;
+  float: left;
+}
+body .header .menu li a {
+  color: #929;
+  text-decoration: none;
+}
+body .header .menu li a:hover {
+  color: #606;
+  font-weight: 700;
+}
 body .container {
   width: 80%;
   margin: 2% 15%;
@@ -43,4 +61,9 @@ body .footer {
   border-top: 2px solid #939;
   background-color: lightgrey;
   height: 100px;
+}
+body .footer p {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
 }

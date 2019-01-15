@@ -20,17 +20,35 @@ body {
         background-image: url(head.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-
+        /*Логотип*/
         .logo {
             margin-left: 15%;
             display: inline;
             img{
             width: 350px;}
         }
+        /*Меню*/
         .menu {
-           
-           float: right;
+            float: right;
             margin-top: 150px;
+
+            li{
+                font-style: italic;
+                font-size: 24px;
+                font-weight: 600;
+                list-style-type: none;
+                padding: 2px 5px;
+                float: left;
+                
+                a{
+                    color: #929;
+                    text-decoration: none;
+                    &:hover{
+                        color: #606;
+                        font-weight: 700; 
+                    }
+                }
+            }
         }
     }
     /*Содержимое*/
@@ -45,5 +63,10 @@ body {
         border-top: 2px solid #939;
         background-color: lightgrey;
         height: 100px;
+        p{
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
     }
 }
