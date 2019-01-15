@@ -8,12 +8,14 @@ body {
   font-family: 'Philosopher', sans-serif;
   color: #333;
   font-weight: 500;
-  padding: 0;
-  margin: 0;
   min-width: 600px;
   /*Заголовок*/
   /*Содержимое*/
   /*Подвал*/
+}
+body h2 {
+  margin-left: 10%;
+  color: #929;
 }
 body .header {
   border-bottom: 2px solid #939;
@@ -53,9 +55,32 @@ body .header .menu li a:hover {
 }
 body .container {
   width: 80%;
-  margin: 2% 15%;
+  margin: 0 auto;
+  padding: 2% 2%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+body .container .page {
+  width: 120px;
+  outline-width: 1px;
+  outline-color: #606;
+  outline-style: solid;
+  text-align: center;
+  color: #606;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+body .container .page img {
+  width: 120px;
+}
+body .container .page:hover {
+  outline-width: 3px;
+  text-shadow: 1px 1px 2px;
+}
+body .container .page a:link {
+  color: inherit;
 }
 body .footer {
   border-top: 2px solid #939;
