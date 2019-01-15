@@ -114,6 +114,81 @@ body {
                 }
             }
         }
+        /*Страница описания товара*/
+        .short{
+            display: flex;
+            .image{
+                outline-width: 2px;
+                outline-color: #606;
+                outline-style: solid;
+                margin: 20px 10px;
+                &:hover{
+                    outline: none;
+                }
+            }
+           
+            
+            .m_des {
+                color: #707070;
+                font-size: 14px;
+                font-style: italic;
+                line-height: 16px;
+            }}
+        
+        .des{
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            background-color: #eaeaea;
+            }
+
+        .max_des {
+            color: #484343;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+
+            p:first-letter{
+                color: #606;
+                font-family: serif;
+                font-size: 20px;
+            }
+        }
+        .param {
+            list-style-image: url(page/mark.png);
+            color: #939;
+            font-size: 18px;
+        }
+        table,tr,td{
+            border-collapse: collapse;
+            padding: 15px;
+            text-align: center;
+            .t_cap{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            input{ width: 100px;}
+            .row{
+                border: 1px solid #939;
+            }
+            .buy{
+                &:hover{
+                    cursor: pointer;
+                }
+                &:active{
+                    outline: 2px solid #606;
+                }
+            }
+        }
+        table{
+            tr:first-of-type{
+                font-size: 1.2em;
+                font-weight: 600;
+                height: 70px;
+                background-color: #C9C;
+            }
+        }
     }
     /*Подвал*/
     .footer {
