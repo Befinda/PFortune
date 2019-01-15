@@ -1,0 +1,240 @@
+/*Подключение шрифта*/
+
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+body {
+    background-color: #FFF0F5;
+    font-family: 'Philosopher', sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    min-width: 600px;
+}
+
+
+/*Структура*/
+
+.header {
+    border-bottom: 2px solid #939;
+    height: 200px;
+    background-image: url(head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 2% 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    border-top: 2px solid #939;
+    background-color: lightgrey;
+    height: 100px;
+}
+
+.footer p {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+/*Элементы формы*/
+
+input {
+    width: 200px;
+    font-family: inherit;
+    outline: none;
+    margin: 3px;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    height: 20px;
+}
+
+textarea {
+    height: 200px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    height: 25px;
+}
+
+.email:focus {
+    color: #00C;
+    background-color: #FF9;
+}
+
+.fio {
+    text-transform: capitalize;
+}
+
+
+/*Картинки в каталоге и описании*/
+
+.image {
+    outline-width: 2px;
+    outline-color: #606;
+    outline-style: solid;
+    margin: 20px 10px;
+}
+
+.image:hover {
+    outline: none;
+}
+
+.page {
+    width: 120px;
+    outline-width: 1px;
+    outline-color: #606;
+    outline-style: solid;
+    text-align: center;
+    color: #606;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.page:hover {
+    outline-width: 3px;
+    text-shadow: 1px 1px 2px;
+}
+
+.page a:link {
+    color: inherit;
+}
+
+.page img {
+    width: 120px;
+}
+
+
+/*Меню и заголовки*/
+
+.menu li {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 2px 5px;
+    float: left;
+}
+
+.menu li a,
+h2 {
+    color: #929;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #606;
+    font-weight: 700;
+}
+
+.header img {
+    width: 350px;
+}
+
+.logo {
+    margin-left: 15%;
+    display: inline;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+    margin-top: 150px;
+}
+
+
+/*Описание*/
+
+.des {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.m_des {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.max_des {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.max_des p:first-letter {
+    color: #606;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.param {
+    list-style-image: url(page/mark.png);
+    color: #939;
+    font-size: 18px;
+}
+
+.short {
+    display: flex;
+}
+
+.buy:hover {
+    cursor: pointer;
+}
+
+.buy:active {
+    outline: 2px solid #606;
+}
+
+
+/*Таблица*/
+
+.t_cap {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+table input {
+    width: 100px;
+}
+
+.row {
+    border: 1px solid #939;
+}
+
+tr:first-of-type {
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 70px;
+    background-color: #C9C;
+}
+
+.cat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2%;
+}
