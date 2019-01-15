@@ -12,6 +12,7 @@ body {
   /*Заголовок*/
   /*Содержимое*/
   /*Подвал*/
+  /*Left*/
 }
 body h2 {
   margin-left: 10%;
@@ -61,6 +62,8 @@ body .container {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: justify;
+  /*Каталог*/
+  /*Форма обратной связи*/
 }
 body .container .page {
   width: 120px;
@@ -82,6 +85,32 @@ body .container .page:hover {
 body .container .page a:link {
   color: inherit;
 }
+body .container form fieldset input {
+  width: 200px;
+  font-family: inherit;
+  outline: none;
+  margin: 3px;
+}
+body .container form fieldset input[type="text"] {
+  font-size: 16px;
+  height: 20px;
+}
+body .container form fieldset input[type="submit"],
+body .container form fieldset input[type="reset"] {
+  height: 25px;
+}
+body .container form fieldset .email:focus {
+  color: #00C;
+  background-color: #FF9;
+}
+body .container form fieldset .fio {
+  text-transform: capitalize;
+}
+body .container form fieldset textarea {
+  height: 200px;
+  font-family: inherit;
+  font-size: 16px;
+}
 body .footer {
   border-top: 2px solid #939;
   background-color: lightgrey;
@@ -91,4 +120,7 @@ body .footer p {
   float: right;
   margin-top: 10px;
   margin-right: 20px;
+}
+body .left {
+  display: block;
 }
