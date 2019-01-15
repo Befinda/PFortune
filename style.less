@@ -12,4 +12,38 @@ body {
     padding: 0;
     margin: 0;
     min-width: 600px;
+    
+    /*Заголовок*/
+    .header {
+        border-bottom: 2px solid #939;
+        height: 200px;
+        background-image: url(head.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .logo {
+            margin-left: 15%;
+            display: inline;
+            img{
+            width: 350px;}
+        }
+        .menu {
+           
+           float: right;
+            margin-top: 150px;
+        }
+    }
+    /*Содержимое*/
+    .container {
+        width: 80%;
+        margin: 2% 15%;
+        display: flex;
+        justify-content: space-around;
+    }
+    /*Подвал*/
+    .footer {
+        border-top: 2px solid #939;
+        background-color: lightgrey;
+        height: 100px;
+    }
 }
