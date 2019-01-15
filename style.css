@@ -36,14 +36,14 @@ html body .header {
 }
 html body .header .logo {
   margin-left: 15%;
-  display: inline;
+  display: block;
 }
 html body .header .logo img {
   width: 350px;
 }
 html body .header .menu {
+  margin-block-start: 2%;
   float: right;
-  margin-top: 150px;
 }
 html body .header .menu li {
   font-style: italic;
@@ -64,7 +64,7 @@ html body .header .menu li a:hover {
 html body .container {
   flex: 1 0 auto;
   width: 80%;
-  margin: auto auto;
+  margin: 0 auto;
   padding: 2% 2%;
   display: flex;
   justify-content: space-around;
@@ -143,6 +143,7 @@ html body .container .des {
   font-size: 18px;
   font-weight: 400;
   background-color: #eaeaea;
+  margin: 18px 0;
 }
 html body .container .max_des {
   color: #484343;
@@ -160,10 +161,12 @@ html body .container .param {
   list-style-image: url(page/mark.png);
   color: #939;
   font-size: 18px;
+  padding-left: 40px;
 }
 html body .container table,
 html body .container tr,
 html body .container td {
+  flex-grow: 1;
   border-collapse: collapse;
   padding: 15px;
   text-align: center;
@@ -199,6 +202,9 @@ html body .container table tr:first-of-type {
   font-weight: 600;
   height: 70px;
   background-color: #C9C;
+}
+html body .container p {
+  margin: 16px 0;
 }
 html body .footer {
   border-top: 2px solid #939;
