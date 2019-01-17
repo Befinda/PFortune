@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%;
-}
-html body {
+html,
+body {
   background-color: #FFF0F5;
   font-family: 'Philosopher', sans-serif;
+  height: 100%;
+}
+html .conteiner,
+body .conteiner {
   color: #333;
   font-weight: 500;
   min-width: 600px;
@@ -16,17 +18,19 @@ html body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   /*Заголовок*/
   /*Содержимое*/
   /*Подвал*/
   /*Left*/
 }
-html body h2 {
+html .conteiner h2,
+body .conteiner h2 {
   margin-left: 10%;
   color: #929;
 }
-html body .header {
+html .conteiner .header,
+body .conteiner .header {
   border-bottom: 2px solid #939;
   height: 200px;
   background-image: url(head.jpg);
@@ -36,18 +40,22 @@ html body .header {
   /*Логотип*/
   /*Меню*/
 }
-html body .header .logo {
-  margin-left: 15%;
+html .conteiner .header a,
+body .conteiner .header a {
+  margin-left: 5%;
   display: block;
 }
-html body .header .logo img {
+html .conteiner .header a img,
+body .conteiner .header a img {
   width: 350px;
 }
-html body .header .menu {
+html .conteiner .header .menu,
+body .conteiner .header .menu {
   margin-block-start: 2%;
   float: right;
 }
-html body .header .menu li {
+html .conteiner .header .menu li,
+body .conteiner .header .menu li {
   font-style: italic;
   font-size: 24px;
   font-weight: 600;
@@ -55,15 +63,18 @@ html body .header .menu li {
   padding: 2px 5px;
   float: left;
 }
-html body .header .menu li a {
+html .conteiner .header .menu li a,
+body .conteiner .header .menu li a {
   color: #929;
   text-decoration: none;
 }
-html body .header .menu li a:hover {
+html .conteiner .header .menu li a:hover,
+body .conteiner .header .menu li a:hover {
   color: #606;
   font-weight: 700;
 }
-html body .container {
+html .conteiner .content,
+body .conteiner .content {
   flex: 1 0 auto;
   margin: 0 auto;
   padding: 2% 2%;
@@ -75,7 +86,8 @@ html body .container {
   /*Форма обратной связи*/
   /*Страница описания товара*/
 }
-html body .container .page {
+html .conteiner .content .page,
+body .conteiner .content .page {
   flex: 0 0 auto;
   max-width: 200px;
   outline-width: 1px;
@@ -86,139 +98,180 @@ html body .container .page {
   padding: 5px;
   margin: 10px;
 }
-html body .container .page img {
+html .conteiner .content .page img,
+body .conteiner .content .page img {
   width: 120px;
 }
-html body .container .page:hover {
+html .conteiner .content .page:hover,
+body .conteiner .content .page:hover {
   outline-width: 3px;
   text-shadow: 1px 1px 2px;
 }
-html body .container .page a:link {
+html .conteiner .content .page a:link,
+body .conteiner .content .page a:link {
   color: inherit;
 }
-html body .container form fieldset input {
+html .conteiner .content form fieldset input,
+body .conteiner .content form fieldset input {
   width: 200px;
   font-family: inherit;
   outline: none;
   margin: 3px;
 }
-html body .container form fieldset input[type="text"] {
+html .conteiner .content form fieldset input[type="text"],
+body .conteiner .content form fieldset input[type="text"] {
   font-size: 16px;
   height: 20px;
 }
-html body .container form fieldset input[type="submit"],
-html body .container form fieldset input[type="reset"] {
+html .conteiner .content form fieldset input[type="submit"],
+body .conteiner .content form fieldset input[type="submit"],
+html .conteiner .content form fieldset input[type="reset"],
+body .conteiner .content form fieldset input[type="reset"] {
   height: 25px;
 }
-html body .container form fieldset .email:focus {
+html .conteiner .content form fieldset .email:focus,
+body .conteiner .content form fieldset .email:focus {
   color: #00C;
   background-color: #FF9;
 }
-html body .container form fieldset .fio {
+html .conteiner .content form fieldset .fio,
+body .conteiner .content form fieldset .fio {
   text-transform: capitalize;
 }
-html body .container form fieldset textarea {
+html .conteiner .content form fieldset textarea,
+body .conteiner .content form fieldset textarea {
   height: 200px;
   font-family: inherit;
   font-size: 16px;
 }
-html body .container .short {
+html .conteiner .content .short,
+body .conteiner .content .short {
   display: flex;
 }
-html body .container .short .image {
+html .conteiner .content .short .image,
+body .conteiner .content .short .image {
   outline-width: 2px;
   outline-color: #606;
   outline-style: solid;
   margin: 20px 10px;
 }
-html body .container .short .image:hover {
+html .conteiner .content .short .image:hover,
+body .conteiner .content .short .image:hover {
   outline: none;
 }
-html body .container .short .m_des {
+html .conteiner .content .short .m_des,
+body .conteiner .content .short .m_des {
   color: #707070;
   font-size: 14px;
   font-style: italic;
   line-height: 16px;
 }
-html body .container .des {
+html .conteiner .content .des,
+body .conteiner .content .des {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   background-color: #eaeaea;
   margin: 18px 0;
 }
-html body .container .max_des {
+html .conteiner .content .max_des,
+body .conteiner .content .max_des {
   color: #484343;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
-html body .container .max_des p:first-letter {
+html .conteiner .content .max_des p:first-letter,
+body .conteiner .content .max_des p:first-letter {
   color: #606;
   font-family: serif;
   font-size: 20px;
 }
-html body .container .param {
+html .conteiner .content .param,
+body .conteiner .content .param {
   list-style-image: url(page/mark.png);
   color: #939;
   font-size: 18px;
   padding-left: 40px;
 }
-html body .container table,
-html body .container tr,
-html body .container td {
+html .conteiner .content table,
+body .conteiner .content table,
+html .conteiner .content tr,
+body .conteiner .content tr,
+html .conteiner .content td,
+body .conteiner .content td {
   flex-grow: 1;
   border-collapse: collapse;
   padding: 15px;
   text-align: center;
 }
-html body .container table .t_cap,
-html body .container tr .t_cap,
-html body .container td .t_cap {
+html .conteiner .content table .t_cap,
+body .conteiner .content table .t_cap,
+html .conteiner .content tr .t_cap,
+body .conteiner .content tr .t_cap,
+html .conteiner .content td .t_cap,
+body .conteiner .content td .t_cap {
   font-weight: 700;
   font-size: 20px;
 }
-html body .container table input,
-html body .container tr input,
-html body .container td input {
+html .conteiner .content table input,
+body .conteiner .content table input,
+html .conteiner .content tr input,
+body .conteiner .content tr input,
+html .conteiner .content td input,
+body .conteiner .content td input {
   width: 100px;
 }
-html body .container table .row,
-html body .container tr .row,
-html body .container td .row {
+html .conteiner .content table .row,
+body .conteiner .content table .row,
+html .conteiner .content tr .row,
+body .conteiner .content tr .row,
+html .conteiner .content td .row,
+body .conteiner .content td .row {
   border: 1px solid #939;
 }
-html body .container table .buy:hover,
-html body .container tr .buy:hover,
-html body .container td .buy:hover {
+html .conteiner .content table .buy:hover,
+body .conteiner .content table .buy:hover,
+html .conteiner .content tr .buy:hover,
+body .conteiner .content tr .buy:hover,
+html .conteiner .content td .buy:hover,
+body .conteiner .content td .buy:hover {
   cursor: pointer;
 }
-html body .container table .buy:active,
-html body .container tr .buy:active,
-html body .container td .buy:active {
+html .conteiner .content table .buy:active,
+body .conteiner .content table .buy:active,
+html .conteiner .content tr .buy:active,
+body .conteiner .content tr .buy:active,
+html .conteiner .content td .buy:active,
+body .conteiner .content td .buy:active {
   outline: 2px solid #606;
 }
-html body .container table tr:first-of-type {
+html .conteiner .content table tr:first-of-type,
+body .conteiner .content table tr:first-of-type {
   font-size: 1.2em;
   font-weight: 600;
   height: 70px;
   background-color: #C9C;
 }
-html body .container p {
+html .conteiner .content p,
+body .conteiner .content p {
   margin: 16px 0;
 }
-html body .footer {
+html .conteiner .footer,
+body .conteiner .footer {
   border-top: 2px solid #939;
   background-color: lightgrey;
   height: 100px;
   flex: 0 0 auto;
 }
-html body .footer p {
+html .conteiner .footer p,
+body .conteiner .footer p {
   float: right;
   margin-top: 10px;
   margin-right: 20px;
 }
-html body .left {
+html .conteiner .left,
+body .conteiner .left {
   display: block;
 }
