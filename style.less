@@ -13,6 +13,8 @@ body {
     color: #333;
     font-weight: 500;
     min-width: 600px;
+    width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -68,7 +70,6 @@ body {
     /*Содержимое*/
     .container {
         flex: 1 0 auto;
-        width: 80%;
         margin: 0 auto;
         padding: 2% 2%;
         display: flex;
@@ -78,9 +79,9 @@ body {
 
         /*Каталог*/
         .page{
-            flex:0 0 calc(20%-10px);
+            flex:0 0 auto;
 
-            min-width: 200px;
+            max-width: 200px;
             outline-width: 1px;
             outline-color: #606;
             outline-style: solid;
